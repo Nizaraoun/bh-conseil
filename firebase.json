@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"mybh-bank","appId":"1:413921141762:android:1a74346097edd655e8331b","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"mybh-bank","configurations":{"android":"1:413921141762:android:1a74346097edd655e8331b","web":"1:413921141762:web:b3823a48eae0251fe8331b"}}}}}}

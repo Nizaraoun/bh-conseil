@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "413921141762",
+    "project_id": "mybh-bank",
+    "storage_bucket": "mybh-bank.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413921141762:android:1a74346097edd655e8331b",
+        "android_client_info": {
+          "package_name": "com.example.my_bh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413921141762-ol1qe3nqmc6vr3dj10k062d9ot4u8hbr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.my_bh",
+            "certificate_hash": "0ba6e2b5c23965db005d64f7e07e36bd8c0954e7"
+          }
+        },
+        {
+          "client_id": "413921141762-crsc8fb7nm0iknqsrldnpni3tucn0l61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnaVUUEpbDafyoAFwKXb1Qd1hOs9mINY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413921141762-crsc8fb7nm0iknqsrldnpni3tucn0l61.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "413921141762-c66ageqpejthpt85mh20366j1bdjnf5v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.myBh"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
