@@ -34,7 +34,7 @@ class SingUp extends StatelessWidget {
             },
             inputType: TextInputType.text,
             icon: const Icon(Icons.person),
-            texthint: "Your Name",
+            texthint: "Votre Nom",
           ),
           CustomTextFormField(
             height: 50,
@@ -44,7 +44,7 @@ class SingUp extends StatelessWidget {
             },
             inputType: TextInputType.text,
             icon: const Icon(Icons.mail),
-            texthint: "Your Mail",
+            texthint: "Votre Email",
           ),
           const SizedBox(
             height: 10,
@@ -57,16 +57,14 @@ class SingUp extends StatelessWidget {
             },
             inputType: TextInputType.phone,
             icon: const Icon(Icons.phone),
-            texthint: "Phone Number",
+            texthint: "Numéro de Téléphone",
           ),
           const SizedBox(
             height: 20,
           ),
           CustomButton(
             text: S.of(context).SignUp,
-            Onpress: () {
-              controller.Singup();
-            },
+            Onpress: () {},
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),

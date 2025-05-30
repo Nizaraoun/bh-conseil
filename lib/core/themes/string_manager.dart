@@ -4,7 +4,7 @@ import '../../core/themes/color_mangers.dart';
 class StylesManager {
   // Headline Styles
   static const TextStyle headline1 = TextStyle(
-    fontSize: 30,
+    fontSize: 25,
     fontWeight: FontWeight.bold,
     color: ColorManager.white,
     fontFamily: 'Montserrat',
@@ -15,11 +15,11 @@ class StylesManager {
     fontWeight: FontWeight.w600,
     color: ColorManager.black,
   );
-
+       
   // Subtitle Styles
   static const TextStyle subtitle1 = TextStyle(
     fontSize: 18,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w500, 
     color: Colors.grey,
   );
 

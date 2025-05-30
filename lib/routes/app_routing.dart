@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_bh/feature-admin/view/homepageadmin.dart';
+import 'package:my_bh/features/consiel/consielDetails.dart';
 import 'package:my_bh/features/profile/view/UserInformation.dart';
 import 'package:my_bh/features/report/view/reportView.dart';
 import 'package:my_bh/features/transactions/view/transactionsView.dart';
+import '../features/actualité/actualiteBhView.dart';
 import '../features/exchange/view/exchangeView.dart';
 import '../features/notification/view/notificationView.dart';
 import '../features/settings/view/profileScreen.dart';
@@ -29,59 +32,88 @@ class AppRoutes {
   static const settings = '/settings';
   static const transactions = '/transactions';
   static const transactionDetails = '/transactionDetails';
+  static const consielDetails = '/consielDetails';
+  static const homeadmine = '/homeadmine';
 
   // the page routes
   List<GetPage> appRoutes = [
     GetPage(
-        name: splash,
-        page: () => const Splashscreen(),
-        transition: Transition.fadeIn,
-        curve: Curves.easeIn),
+      name: splash,
+      page: () => const Splashscreen(),
+      transition: Transition.rightToLeft,
+      curve: Curves.easeIn,
+      transitionDuration: Duration(milliseconds: 500), // Add this line
+    ),
     GetPage(
-        name: homepage,
-        page: () =>  HomePage(),
-        transition: Transition.fadeIn,
-        curve: Curves.easeIn),
+      name: homepage,
+      page: () => HomePage(),
+      transition: Transition.fadeIn,
+      curve: Curves.easeIn,
+      transitionDuration: Duration(milliseconds: 500),
+    ),
     GetPage(
-        name: home,
-        page: () => const AuthentifactionPage(),
-        transition: Transition.fadeIn,
-        curve: Curves.easeIn),
-           GetPage(
-        name: report,
-        page: () => Reportview(),
-        transition: Transition.fadeIn,
-        curve: Curves.easeIn),
+      name: home,
+      page: () => const AuthentifactionPage(),
+      transition: Transition.rightToLeft,
+      curve: Curves.easeInOut,
+      transitionDuration: Duration(milliseconds: 1500),
+    ),
     GetPage(
-        name: profile,
-        page: () => ProfileScreen(),
-        transition: Transition.fadeIn,
-        curve: Curves.easeIn),
-            GetPage(
-        name: personalInformation,
-        page: () => PersonalInformationView(),
-        transition: Transition.fadeIn,
-        curve: Curves.easeIn),
+      name: report,
+      page: () => Reportview(),
+      transition: Transition.fadeIn,
+      curve: Curves.easeIn,
+      transitionDuration: Duration(milliseconds: 500),
+    ),
     GetPage(
-        name: Exchange,
-        page: () => const ExchangeView(),
-        transition: Transition.fadeIn,
-        curve: Curves.easeIn),
+      name: profile,
+      page: () => ProfileScreen(),
+      transition: Transition.fadeIn,
+      curve: Curves.easeIn,
+      transitionDuration: Duration(milliseconds: 500),
+    ),
     GetPage(
-        name: notification,
-        page: () => const Notificationview(),
-        transition: Transition.fadeIn,
-        curve: Curves.easeIn),
-        GetPage(
-
-        name: transactions,
-        page: () => const TransactionsView(),
-        transition: Transition.fadeIn,
-        curve: Curves.easeIn
-        )
-
-    
-    
+      name: personalInformation,
+      page: () => PersonalInformationView(),
+      transition: Transition.fadeIn,
+      curve: Curves.easeIn,
+      transitionDuration: Duration(milliseconds: 500),
+    ),
+    GetPage(
+      name: Exchange,
+      page: () => const ExchangeView(),
+      transition: Transition.fadeIn,
+      curve: Curves.easeIn,
+      transitionDuration: Duration(milliseconds: 500),
+    ),
+    GetPage(
+      name: transactions,
+      page: () => const TransactionsView(),
+      transition: Transition.fadeIn,
+      curve: Curves.easeIn,
+      transitionDuration: Duration(milliseconds: 500),
+    ),
+    GetPage(
+      name: consielDetails,
+      page: () => ConseilDetails(),
+      transition: Transition.fadeIn,
+      curve: Curves.easeIn,
+      transitionDuration: Duration(milliseconds: 500),
+    ),
+    GetPage(
+      name: homeadmine,
+      page: () => const HomePageAdmin(),
+      transition: Transition.rightToLeft,
+      curve: Curves.easeInOut,
+      transitionDuration: Duration(milliseconds: 1500),
+    ),
+    GetPage(
+      name: notification,
+      page: () => const ActualitesBHView(),
+      transition: Transition.rightToLeft,
+      curve: Curves.easeInOut,
+      transitionDuration: Duration(milliseconds: 1500),
+    ),
   ];
 
   // Routing method to navigate

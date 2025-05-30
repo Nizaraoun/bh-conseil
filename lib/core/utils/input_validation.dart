@@ -26,6 +26,11 @@ validInput(String val, String type) {
       return "not valid day";
     }
   }
+  if (type == "password") {
+    if (!GetUtils.isLengthBetween(val, 6, 20)) {
+      return "Password faible";
+    }
+  }
   if (val.isEmpty) {
     return "الحقل فارغ";
   }

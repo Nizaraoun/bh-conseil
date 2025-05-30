@@ -1,7 +1,7 @@
 // model.dart
 class PersonalInformation {
   String? fullName;
-  DateTime? birthDate;
+  double? age;
   String? gender;
   String? maritalStatus;
   int? dependents;
@@ -9,10 +9,11 @@ class PersonalInformation {
   Vehicle? vehicle;
   Professional? professional;
   Financial? financial;
+  bool? hasHouse;
 
   PersonalInformation({
     this.fullName,
-    this.birthDate,
+    this.age,
     this.gender,
     this.maritalStatus,
     this.dependents,
@@ -20,11 +21,12 @@ class PersonalInformation {
     this.vehicle,
     this.professional,
     this.financial,
+    this.hasHouse,
   });
 
   Map<String, dynamic> toJson() => {
     'fullName': fullName,
-    'birthDate': birthDate?.toIso8601String(),
+    'age': age,
     'gender': gender,
     'maritalStatus': maritalStatus,
     'dependents': dependents,
@@ -32,6 +34,7 @@ class PersonalInformation {
     'vehicle': vehicle?.toJson(),
     'professional': professional?.toJson(),
     'financial': financial?.toJson(),
+    'hasHouse': hasHouse,
   };
 }
 

@@ -57,7 +57,7 @@ class AuthentifactionPage extends StatelessWidget {
                     child: Column(
                       children: [
                         // hedhy awal page tet7al  ba3ed el splash screen
-                        if (controller.welcome) const HomeAuth(),
+                        if (controller.welcome)  HomeAuth(),
                         if (!controller.isSignIn) SingUp(),
                       ],
                     ),

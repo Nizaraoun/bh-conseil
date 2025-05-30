@@ -253,7 +253,7 @@ class TransactionsView extends StatelessWidget {
                                   ),
                                 ),
                                 trailing: Text(
-                                  '${isExpense ? '-' : '+'}${(isExpense ? -transaction['amount'] : transaction['amount']).toStringAsFixed(2)} €',
+                                  '${isExpense ? '-' : '+'}${(isExpense ? -transaction['amount'] : transaction['amount']).toStringAsFixed(2)} TND',
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,

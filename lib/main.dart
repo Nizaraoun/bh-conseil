@@ -16,8 +16,6 @@ Future<void> main() async {
   runApp(MyApp());
 }
 
-
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -44,14 +42,13 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      initialRoute: AppRoutes.homepage,
+      initialRoute: AppRoutes.splash,
 
       getPages: AppRoutes().appRoutes,
 
       builder: (context, child) {
         return Directionality(
-          textDirection: TextDirection.ltr, // Set text direction to RTL
-
+          textDirection: TextDirection.ltr,
           child: child!,
         );
       },

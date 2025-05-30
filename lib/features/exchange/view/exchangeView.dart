@@ -39,7 +39,7 @@ class ExchangeView extends GetView<ExchangeController> {
             flexibleSpace: FlexibleSpaceBar(
               centerTitle: true,
               title: CustomText(
-                txt: 'Exchange Currency',
+                txt: 'Change de devises',
                 color: ColorManager.white,
                 fontweight: FontWeight.w500,
                 size: 20,
@@ -80,7 +80,7 @@ class ExchangeView extends GetView<ExchangeController> {
                     Gap(32),
                     customElevatedButton(
                       onPressed: controller.swapCurrencies,
-                      text: 'Exchange Now',
+                      text: 'changer maintenant',
                       color: ColorManager.primaryColor,
                       textStyle: TextStyle(
                         fontSize: 16,
@@ -115,7 +115,7 @@ class ExchangeView extends GetView<ExchangeController> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CustomText(
-              txt: 'Currency Exchange',
+              txt: 'Montant à échanger',
               color: ColorManager.SoftBlack,
               fontweight: FontWeight.w500,
               size: 20,
@@ -139,7 +139,7 @@ class ExchangeView extends GetView<ExchangeController> {
                       height: 60,
                       icon: Icon(Icons.attach_money),
                       inputType: TextInputType.number,
-                      texthint: 'Amount',
+                      texthint: 'argent',
                       formOnChanged: (value) {
                         controller.updateFromAmount(value);
                       },
@@ -201,14 +201,14 @@ class ExchangeView extends GetView<ExchangeController> {
                     return CustomTextFormField(
                       validator: (value) {
                         if (value?.isEmpty ?? true) {
-                          return 'Please enter amount';
+                          return 'S\'il vous plaît entrer le montant';
                         }
                         return null;
                       },
                       height: 60,
                       icon: Icon(Icons.currency_exchange),
                       inputType: TextInputType.number,
-                      texthint: 'Converted amount',
+                      texthint: 'les montants de change',
                       enabled: false,
                       formcontroller: toAmountController,
                       color: ColorManager.white,
@@ -263,7 +263,7 @@ class ExchangeView extends GetView<ExchangeController> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CustomText(
-              txt: 'Current Rate',
+              txt: 'Taux de change',
               color: ColorManager.SoftBlack,
               fontweight: FontWeight.w500,
               size: 20,
@@ -299,7 +299,7 @@ class ExchangeView extends GetView<ExchangeController> {
                   )
                 : Center(
                     child: Text(
-                      "${controller.availableCurrencies.length} currencies available",
+                      "${controller.availableCurrencies.length} devises disponibles",
                       style: TextStyle(color: Colors.grey),
                     ),
                   )),
